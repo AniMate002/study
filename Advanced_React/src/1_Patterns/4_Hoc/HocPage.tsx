@@ -20,8 +20,7 @@ const UnuthorizedComponent = () => {
 };
 
 const withAuthorize = ({ Authorized, Unauthorized }) => {
-    const { isAuthorized, switchAuthorized } = useIsAuthorized();
-    return function (props) {
+    return ({ isAuthorized, ...props }) => {
         return isAuthorized ? (
             <Authorized {...props} />
         ) : (
@@ -42,7 +41,7 @@ const HocPage = () => {
             <button onClick={switchAuthorized}>
                 {isAuthorized ? "Logout" : "Login"}
             </button>
-            <AuthComponent />
+            <AuthComponent isAuthorized={isAuthorized} />
         </div>
     );
 };

@@ -8,6 +8,9 @@ const HomePage = () => {
             <Link to={"/2_Compound_Components"}>2_Compound_Components</Link>
             <Link to={"/3_Render_Prop"}>3_Render_Prop</Link>
             <Link to={"/4_Hoc"}>4_Hoc</Link>
+            <Link to={"/5_State_location"}>5_State_location</Link>
+            <Link to={"/6_Transition"}>6_Transition</Link>
+            <Link to={"/7_Lazy_Loading"}>7_Lazy_Loading</Link>
         </div>
     );
 };
