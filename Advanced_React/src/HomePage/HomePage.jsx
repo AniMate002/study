@@ -11,6 +11,7 @@ const HomePage = () => {
             <Link to={"/5_State_location"}>5_State_location</Link>
             <Link to={"/6_Transition"}>6_Transition</Link>
             <Link to={"/7_Lazy_Loading"}>7_Lazy_Loading</Link>
+            <Link to={"/8_Redux_Toolkit"}>8_Redux_Toolkit</Link>
         </div>
     );
 };

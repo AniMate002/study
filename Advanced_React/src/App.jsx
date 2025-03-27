@@ -10,6 +10,7 @@ import HocPage from "./1_Patterns/4_Hoc/HocPage";
 import StateLocationPage from "./2_Optimization/5_State_location/StateLocationPage";
 import TransitionPage from "./2_Optimization/6_Transition/TransitionPage";
 import LazyLoadingPage from "./2_Optimization/7_Lazy_Loading/LazyLoadingPage";
+import ReduxToolkitPage from "./3_Redux_Toolkit/ReduxToolkitPage";
 
 function App() {
     const [count, setCount] = useState(0);
@@ -31,6 +32,7 @@ function App() {
                 />
                 <Route path='/6_Transition' element={<TransitionPage />} />
                 <Route path='/7_Lazy_Loading' element={<LazyLoadingPage />} />
+                <Route path='/8_Redux_Toolkit' element={<ReduxToolkitPage />} />
             </Routes>
         </>
     );
